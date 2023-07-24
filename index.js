@@ -31,9 +31,11 @@ function getQuotes() {
   return $.ajax({
     headers: {
       Accept: 'application/json'
-    },
+      },
+      
+      
     url:
-      '',
+      'https://murlykin.github.io/random-quote-machine/quotes.json',
     success: function (jsonQuotes) {
       if (typeof jsonQuotes === 'string') {
         quotesData = JSON.parse(jsonQuotes);
