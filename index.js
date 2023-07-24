@@ -7,22 +7,19 @@ function getRandomHexColor() {
 const changeButton = document.querySelector('button')
 const body = document.querySelector('body')
 const button = document.querySelector('button')
-const images = document.querySelector('img')
+const img = document.querySelector('img')
 const tweet = document.querySelector('#tweet-quote')
 const tumblr = document.querySelector('#tumblr-quote')
-
 
 changeButton.addEventListener('click', e => {
   let color = getRandomHexColor();
     body.style.backgroundColor = color;
     body.style.color = color;
     button.style.backgroundColor = color;
-    // images.style.fill = color;
+    // img.style.fill = color;
     tweet.style.backgroundColor = color;
     tumblr.style.backgroundColor = color;
-    
 })
-
 
 let currentQuote = '',
   currentAuthor = '';
@@ -32,8 +29,6 @@ function getQuotes() {
     headers: {
       Accept: 'application/json'
       },
-      
-      
     url:
       'https://gist.githubusercontent.com/Murlykin/845c893eb7dab0aea8342b8002a11da4/raw/d486b9b3b86e7029f964aa995a60406e8ca5741d/quotes.json',
     success: function (jsonQuotes) {
