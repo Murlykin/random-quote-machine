@@ -7,7 +7,7 @@ function getRandomHexColor() {
 const changeButton = document.querySelector('button')
 const body = document.querySelector('body')
 const button = document.querySelector('button')
-const img = document.querySelector('img')
+const img = document.querySelector('.img')
 const tweet = document.querySelector('#tweet-quote')
 const tumblr = document.querySelector('#tumblr-quote')
 
@@ -16,7 +16,7 @@ changeButton.addEventListener('click', e => {
     body.style.backgroundColor = color;
     body.style.color = color;
     button.style.backgroundColor = color;
-    // img.style.fill = color;
+    img.style.fill = color;
     tweet.style.backgroundColor = color;
     tumblr.style.backgroundColor = color;
 })
