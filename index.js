@@ -35,7 +35,7 @@ function getQuotes() {
       
       
     url:
-      'https://murlykin.github.io/random-quote-machine/quotes.json',
+      'https://gist.githubusercontent.com/Murlykin/845c893eb7dab0aea8342b8002a11da4/raw/d486b9b3b86e7029f964aa995a60406e8ca5741d/quotes.json',
     success: function (jsonQuotes) {
       if (typeof jsonQuotes === 'string') {
         quotesData = JSON.parse(jsonQuotes);
