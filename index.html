@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Random quote machine</title>
+  </head>
+  <body>
+
+<div id="wrapper">
+    <div id="quote-box">
+        <div class="quote-text">
+                <svg class="img" width="30" height="24">
+                    <use href="./img/symbol-defs.svg#quotes"></use>
+                </svg></i>&nbsp;<span id="text"></span>
+        </div>
+        <div class="quote-author">- <span id="author"></span></div>
+
+        <div class="buttons">
+          <a
+            class="button"
+            id="tweet-quote"
+            title="Tweet this quote!"
+            target="_top"
+          >
+            <svg fill="#fff" width="22" height="22">
+              <use href="./img/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+          <a
+            class="button"
+            id="tumblr-quote"
+            title="Post this quote on tumblr!"
+            target="_blank"
+          >
+            <svg fill="#fff" width="22" height="22">
+              <use href="./img/symbol-defs.svg#tumblr"></use>
+            </svg>
+          </a>
+          <button class="button" id="new-quote">New quote</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        by <a class="footer__a" href="https://github.com/Murlykin">Murlykin</a>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  </body>
+</html>
